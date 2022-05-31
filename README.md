@@ -13,15 +13,62 @@ Disini saya akan membuat prpgram modular sederhana menggunakan PHP
 ![folder](scs/2.png)
 
 ## 2). Buat file baru dengan nama header.php
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contoh Modularisasi</title>
+<link href="style.css" rel="stylesheet" type="text/stylesheet" media="screen" />
+</head>
+<body>
+    <div class="container">
+<header>
+    <h1>Modularisasi Menggunakan Require</h1>
+</header>
+    <nav>
+        <a href="home.php">Home</a>
+        <a href="about.php">Tentang</a>
+        <a href="kontak.php">Kontak</a>
+</nav>
+```
 ![gambar](scs/3.png)
 
 ## 3). Buat file baru dengan nama footer.php
+```
+<footer>
+                <p>&copy; 2021, Informatika, Universitas Pelita Bangsa</p>
+        </footer>
+    </div>
+</body>
+</html>
+```
 ![gambar](scs/4.png)
 
 ## 4). Buat file baru dengan nama home.php
+```
+<?php require('header.php'); ?>
+
+<div class="content">
+    <h2>Ini Halaman Home</h2>
+    <p>Ini adalah bagian content dari halaman.</p>
+</div>
+
+<?php require('footer.php'); ?>
+```
 ![home](scs/5.png)
 
 ## 5). Buat file baru dengan nama about.php
+```
+<?php require('header.php'); ?>
+
+<div class="content">
+    <h2>Ini Halaman About</h2>
+    <p>Ini adalah bagian content dari halaman.</p>
+</div>
+
+<?php require('footer.php'); ?>
+```
 ![about](scs/6.png)
 
 ## 6). Hasil tampilan halaman home pada browser dengan menggunakan modular header dan footer
@@ -41,6 +88,6 @@ database, sehingga setiap halamannya memiliki template tampilan yang sama.
 ![home](scs/9.png)
 
 ## - Tampilan halaman tambah barang
-![tambah](scs/110.png)
+![tambah](scs/10.png)
 
 # SEKIAN & TERIMA KASIH
